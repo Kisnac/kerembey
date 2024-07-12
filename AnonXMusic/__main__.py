@@ -21,7 +21,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER(__name__).error("Assistant client variables not defined, exiting...")
+        LOGGER(__name__).error("String hatası...")
         exit()
     await sudo()
     try:
@@ -36,14 +36,14 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("AnonXMusic.plugins" + all_module)
-    LOGGER("AnonXMusic.plugins").info("Successfully Imported Modules...")
+    LOGGER("AnonXMusic.plugins").info("Mödüller yüklendi.")
     await userbot.start()
     await Anony.start()
     try:
         await Anony.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("AnonXMusic").error(
-            "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
+            "Lütfen sesli sohbet açık değil \n\nBot durduruluyor..."
         )
         exit()
     except:
@@ -55,7 +55,7 @@ async def init():
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("AnonXMusic").info("Stopping AnonX Music Bot...")
+    LOGGER("AnonXMusic").info("Spotify Müzik Durduruluyor...")
 
 
 if __name__ == "__main__":
