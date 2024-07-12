@@ -36,17 +36,17 @@ async def activevc(_, message: Message):
         except:
             continue
     if not text:
-        await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
+        await mystic.edit_text(f"» ᴀᴋᴛɪғ ɢᴏʀᴜɴᴛᴜʟᴜ sᴏʜʙᴇᴛ ʏᴏᴋ {app.mention}.")
     else:
         await mystic.edit_text(
-            f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs :</b>\n\n{text}",
+            f"<b>» şᴜᴀɴ ᴀᴋᴛɪ̇ғ sᴇsʟɪ̇ sᴏʜʙᴇᴛʟᴇʀ :</b>\n\n{text}",
             disable_web_page_preview=True,
         )
 
 
 @app.on_message(filters.command(["activev", "activevideo"]) & SUDOERS)
 async def activevi_(_, message: Message):
-    mystic = await message.reply_text("» ɢᴇᴛᴛɪɴɢ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs ʟɪsᴛ...")
+    mystic = await message.reply_text("» ᴀᴋᴛɪғ ɢᴏʀᴜɴᴛᴜʟᴜ sᴏʜʙᴇᴛʟᴇʀɪɴ ʙɪʟɢɪsɪ...")
     served_chats = await get_active_video_chats()
     text = ""
     j = 0
@@ -68,9 +68,9 @@ async def activevi_(_, message: Message):
         except:
             continue
     if not text:
-        await mystic.edit_text(f"» ɴᴏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs ᴏɴ {app.mention}.")
+        await mystic.edit_text(f"» ᴀᴋᴛɪғ ɢᴏʀᴜɴᴛᴜʟᴜ sᴏʜʙᴇᴛ ʏᴏᴋ {app.mention}.")
     else:
         await mystic.edit_text(
-            f"<b>» ʟɪsᴛ ᴏғ ᴄᴜʀʀᴇɴᴛʟʏ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛs :</b>\n\n{text}",
+            f"<b>» ᴀsɪsᴛᴀɴɪɴ ᴀɴʟıᴋ sᴇsʟɪ sᴏʜʙᴇᴛᴛᴇ ᴀᴋᴛɪғ ᴏʟᴅᴜɢᴜ ɢʀᴜᴘ sᴀʏɪsɪ :</b>\n\n{text}",
             disable_web_page_preview=True,
         )
