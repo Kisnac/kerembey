@@ -47,33 +47,31 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"Starting Assistants...")
+        LOGGER(__name__).info(f"Asistanlar başlatılıyor...")
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("DevilsHeavenMF")
-                await self.one.join_chat("FallenAssociation")
+                await self.one.join_chat("spotifymuzikasistan")
             except:
                 pass
             assistants.append(1)
             try:
-                await self.one.send_message(config.LOGGER_ID, "Assistant Started")
+                await self.one.send_message(config.LOGGER_ID, "Asistanlar başlatıldı")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
+                    "Asistan 1 gruba giremedi. Log grubunda admin olduguna emin ol!"
                 )
                 exit()
             self.one.id = self.one.me.id
             self.one.name = self.one.me.mention
             self.one.username = self.one.me.username
             assistantids.append(self.one.id)
-            LOGGER(__name__).info(f"Assistant Started as {self.one.name}")
+            LOGGER(__name__).info(f"Asistan başlatıldı {self.one.name}")
 
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("DevilsHeavenMF")
-                await self.two.join_chat("FallenAssociation")
+                await self.two.join_chat("spotifymuzikasistan")
             except:
                 pass
             assistants.append(2)
@@ -81,7 +79,7 @@ class Userbot(Client):
                 await self.two.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
+                    "Asistan 2 gruba giremedi. Log grubunda admin olduguna emin ol!"
                 )
                 exit()
             self.two.id = self.two.me.id
@@ -93,8 +91,7 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("DevilsHeavenMF")
-                await self.three.join_chat("FallenAssociation")
+                await self.three.join_chat("spotifymuzikasistan")
             except:
                 pass
             assistants.append(3)
@@ -102,7 +99,7 @@ class Userbot(Client):
                 await self.three.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    "Asistan 3 gruba giremedi. Log grubunda admin olduguna emin ol!"
                 )
                 exit()
             self.three.id = self.three.me.id
@@ -114,8 +111,7 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("DevilsHeavenMF")
-                await self.four.join_chat("FallenAssociation")
+                await self.four.join_chat("spotifymuzikasistan")
             except:
                 pass
             assistants.append(4)
@@ -123,7 +119,7 @@ class Userbot(Client):
                 await self.four.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    "Asistan 4 gruba giremedi. Log grubunda admin olduguna emin ol!"
                 )
                 exit()
             self.four.id = self.four.me.id
@@ -135,8 +131,7 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("DevilsHeavenMF")
-                await self.five.join_chat("FallenAssociation")
+                await self.five.join_chat("spotifymuzikasistan")
             except:
                 pass
             assistants.append(5)
@@ -144,7 +139,7 @@ class Userbot(Client):
                 await self.five.send_message(config.LOGGER_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    "Asistan 5 gruba giremedi. Log grubunda admin olduguna emin ol!"
                 )
                 exit()
             self.five.id = self.five.me.id
@@ -154,7 +149,7 @@ class Userbot(Client):
             LOGGER(__name__).info(f"Assistant Five Started as {self.five.name}")
 
     async def stop(self):
-        LOGGER(__name__).info(f"Stopping Assistants...")
+        LOGGER(__name__).info(f"Asistanlar durduruluyor")
         try:
             if config.STRING1:
                 await self.one.stop()
