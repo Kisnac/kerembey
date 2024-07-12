@@ -65,7 +65,7 @@ async def auto_end():
                 try:
                     await app.send_message(
                         chat_id,
-                        "» ʙᴏᴛ ᴅɪ̇ɴʟᴇʏᴇɴ ᴏʟᴍᴀᴅɪɢɪ ɪ̇ᴄ̧ɪ̇ɴ sᴇsʟɪ̇ sᴏʜʙᴇᴛᴛᴇɴ ᴀʏʀɪʟᴅɪ.",
+                        "» ʙᴏᴛ ᴅɪ̇ɴʟᴇʏᴇɴ ᴏʟᴍᴀᴅɪɢɪ ɪ̇ᴄɪ̇ɴ sᴇsʟɪ̇ sᴏʜʙᴇᴛᴛᴇɴ ᴀʏʀɪʟᴅɪ.",
                     )
                 except:
                     continue
